@@ -55,6 +55,15 @@ const ProductSchema = mongoose.Schema(
       type: Number,
       require: true,
     },
+    favorites: [
+      {
+        id_cliente: {
+          type: Schema.Types.ObjectId,
+          ref: "user",
+          
+        }
+      }
+    ]
   },
   { minimize: false }
 );

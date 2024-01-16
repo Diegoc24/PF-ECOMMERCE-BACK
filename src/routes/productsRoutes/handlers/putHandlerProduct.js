@@ -1,4 +1,4 @@
-const {putControllerProduct, putValorations, putStock, putEditValoration} = require("../controllers/putControllerProduct");
+const {putControllerProduct, putValorations, putStock, putEditValoration, putFavorites} = require("../controllers/putControllerProduct");
 
 const putHandlerProduct = async (req, res) => {
     try {
@@ -17,6 +17,8 @@ const putHandlerProduct = async (req, res) => {
             }else if(bandera == "edit"){
                
                 indicador = await putEditValoration(id, dataModify.edit)
+            }else if(bandera == "favorites"){
+                indicador = await putFavorites(id, dataModify.favorites)
             }
         }
 

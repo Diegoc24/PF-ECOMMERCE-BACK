@@ -1,3 +1,5 @@
+const parseId = require("../../../../utils/parseID");
+const Product = require("../../../db/models/Product");
 const products = require("../../../db/models/Product");
 
 const getControllerProducts = async (name) => {
@@ -79,9 +81,28 @@ const filterPriceFunction = (data, filterPrice) => {
   return filteredProducts;
 }
 
+const getFavoriteId = async (data) => {
+  try {
+    
+    
+    if (!data) throw new Error("data don't exists");
+    
+    const id_cliente = parseId(data).toString();
+    
+
+    const filterProducts = await products.find({"favorites.id_cliente": id_cliente});
+    return filterProducts;
+    
+  } catch (error) {
+    console.error("Error en getFavoriteId:", error);
+ 
+  }
+};
+
 module.exports = {
   getControllerProducts,
   filterCategoryFunction,
   filterPlatformFunction,
-  filterPriceFunction
+  filterPriceFunction,
+  getFavoriteId
 };

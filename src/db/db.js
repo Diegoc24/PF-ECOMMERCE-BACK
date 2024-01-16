@@ -8,7 +8,7 @@ module.exports = () => {
       mongoose.connect(
         DB_UIL,
         {
-          keepAlive: true,
+          
           useNewUrlParser: true,
           useUnifiedTopology: true,
         },

@@ -1,0 +1,128 @@
+[
+    {
+        "name": "GTA V",
+        "description": "El juego de acción y mundo abierto más vendido de todos los tiempos.",
+        "price": 59.99,
+        "category": "Videojuegos",
+        "platform": "PC, PS4, Xbox One",
+        "pictures": [
+          {
+            "url": "https://i.imgur.com/1f7909t.jpg"
+          },
+          {
+            "url": "https://i.imgur.com/5a45552.jpg"
+          }
+        ],
+        "isActive": true,
+        "stock": 100
+      },
+      {
+        "name": "Elden Ring",
+        "description": "El nuevo juego de rol de acción de FromSoftware, creadores de Dark Souls.",
+        "price": 69.99,
+        "category": "Videojuegos",
+        "platform": "PC, PS4, PS5, Xbox One, Xbox Series X/S",
+        "pictures": [
+          {
+            "url": "https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/aGhopp3MHppi7kooGE2Dtt8C.png"
+          },
+          {
+            "url": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/04/elden-ring-malenia-2664911.jpg"
+          }
+        ],
+        "isActive": true,
+        "stock": 100
+      },
+      {
+        "name": "The Witcher 3: Wild Hunt",
+        "description": "El juego de rol de acción ganador de numerosos premios, ambientado en un mundo abierto de fantasía.",
+        "price": 29.99,
+        "category": "Videojuegos",
+        "platform": "PC, PS4, Xbox One",
+        "pictures": [
+          {
+            "url": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png"
+          },
+          {
+            "url": "https://www.digitaltrends.com/wp-content/uploads/2015/06/The-Witcher-3-Wild-Hunt-Stag-Battle.jpg?p=1"
+          }
+        ],
+        "isActive": true,
+        "stock": 100
+      },
+      {
+        "name": "God of War",
+        "description": "La nueva aventura de Kratos y Atreus en un mundo nórdico lleno de peligros.",
+        "price": 49.99,
+        "category": "Videojuegos",
+        "platform": "PS4, PS5",
+        "pictures": [
+          {
+            "url": "https://image.api.playstation.com/vulcan/img/rnd/202010/2217/ax0V5TYMax06mLzmkWeQMiwH.jpg"
+          },
+          {
+            "url": "https://sm.ign.com/t/ign_es/lists/7/7-games-li/7-games-like-god-of-war-worth-playing-in-2023_7w54.1280.jpg"
+          }
+        ],
+        "isActive": true,
+        "stock": 100
+      },
+      {
+        "name": "Horizon Forbidden West",
+        "description": "La secuela de Horizon Zero Dawn, que lleva a Aloy a un nuevo mundo lleno de peligros y maravillas.",
+        "price": 49.99,
+        "category": "Videojuegos",
+        "platform": "PS4, PS5",
+        "pictures": [
+          {
+            "url": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/1dy5w3SNiJnXjP8YvmydCL9X.png"
+          },
+          {
+            "url": "https://sm.ign.com/ign_es/gallery/h/horizon-fo/horizon-forbidden-west-screenshots_h8jm.jpg"
+          }
+        ],
+        "isActive": true,
+        "stock": 100
+      },
+      {
+        "name": "Among Us",
+        "description": "El divertido juego de deducción social que se convirtió en un fenómeno viral.",
+        "price": 4.99,
+        "category": "Videojuegos",
+        "platform": "PC, Móvil",
+        "pictures": [
+          {
+            "url": "https://cdn1.epicgames.com/salesEvent/salesEvent/amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075"
+          },
+          {
+            "url": "https://images.ecestaticos.com/QidGQTmIWL8COyMNQz_tfXvhx_Y=/0x0:0x0/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ff02%2F84b%2F650%2Ff0284b6504ec3d6e776057144ffc446a.jpg"
+          }
+        ],
+        "isActive": true,
+        "stock": 200
+      },
+      {
+  "name": "Celeste",
+  "description": "Un aclamado juego de plataformas con una historia conmovedora sobre superar desafíos.",
+  "price": 19.99,
+  "category": "Videojuegos",
+  "platform": "PC, Switch, PS4, Xbox One",
+  "pictures": [
+    {
+      "url": "https://i.blogs.es/846500/290118-celeste/1366_2000.jpg"
+    },
+    {
+      "url": "https://cdn.cloudflare.steamstatic.com/steam/apps/504230/ss_1ad297c2044cdcf450ee83e56350cafb590da755.1920x1080.jpg?t=1701818058"
+    }
+  ],
+  "isActive": true,
+  "stock": 50
+}
+
+      
+      
+      
+      
+      
+      
+]

@@ -58,6 +58,45 @@ const putStock = async (id, cant) => {
     return product;
 
 }
+const putFavorites = async(id, data) => {
+    if(!id) throw new Error("Enter an id");
+    if(!data) throw new Error("Enter favorites to add");
+    
+    const idParsed = parseID(id);
+    const id_cliente = parseID(data).toString()
+    
+    
+    const product = await Product.findById(idParsed)
+    let findProduct = product.favorites.find((ele) => ele.id_cliente.toString() === id_cliente)
+    
+    if(findProduct) {
+        
+        const dataDelete = await Product.findOneAndUpdate(
+            { _id: idParsed },
+            { $pull: { favorites: {id_cliente}} },
+            
+        )
+        return `${dataDelete} Data delete`
+        
+    }else if(!findProduct){
+        
+        const dataModify = await Product.findByIdAndUpdate(
+            idParsed,
+            {
+                $addToSet:{favorites: [{id_cliente}]}
+            }
+        )
+        
+        return dataModify
+    }
+    
+    
+
+   
+}
+
+
+
 const putEditValoration = async (id, data) => {
     if (!id) throw new Error("Enter an id");
     if (!data) throw new Error("Enter valoration to add");
@@ -91,5 +130,6 @@ module.exports = {
     putControllerProduct,
     putValorations,
     putStock,
-    putEditValoration
+    putEditValoration,
+    putFavorites
 };
