@@ -4,19 +4,17 @@ const { DB_UIL } = process.env;
 
 module.exports = () => {
   const connect = () => {
-    try {
-      mongoose.connect(
-        DB_UIL,
-        {
-          
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
-        },
-        console.log("Conexión con exito a la DB")
-      );
-    } catch (error) {
-      console.log("Error al conectar a la DB");
-    }
+    mongoose.connect(DB_UIL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverApi: {  
+          version: '1',
+          strict: true,
+          deprecationErrors: true,
+      }
+  })
+  .then(() => console.log('Conexión con éxito a la DB'))
+  .catch(error => console.error('Error al conectar a la DB', error));
   };
 
   connect();
